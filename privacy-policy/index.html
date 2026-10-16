@@ -21,7 +21,7 @@
         <span class="pill">Privacy policy</span>
         <h1>Your Privacy, Clearly Explained</h1>
         <p class="lead">Alfa Omega is designed as a local-first pilot logbook. It does not run ads, does not use cross-app tracking, and does not send your logbook to a developer-operated server.</p>
-        <p class="meta">Last updated: 28 June 2026</p>
+        <p class="meta">Last updated: 16 October 2026</p>
       </div>
       <aside class="device" aria-label="Alfa Omega app icon">
         <div class="device-screen">
@@ -51,19 +51,19 @@
         </article>
         <article class="card">
           <h2>Local Storage and iCloud</h2>
-          <p>Your logbook is stored on your device. If iCloud sync is enabled on your device, Apple CloudKit may sync app data through your personal iCloud account so your records are available on your devices. Alfa Omega does not operate or access that iCloud storage.</p>
+          <p>Your logbook is stored on your device. If iCloud Drive is available and enabled for Alfa Omega, the app syncs logbook records, including duty entries, and supported profiles through files in your personal iCloud Drive account so they are available on your devices. This sync uses iCloud Drive, not CloudKit. The developer does not receive or have access to these files.</p>
         </article>
         <article class="card">
           <h2>FL3XX Sync</h2>
-          <p>When you choose Sync with FL3XX, Alfa Omega opens FL3XX in a web view and lets you sign in with FL3XX or Microsoft. The app reads flight information from your visible FL3XX session to help create logbook entries. The app does not write changes to FL3XX.</p>
+          <p>When you connect to FL3XX, Alfa Omega lets you sign in with FL3XX or Microsoft through an in-app web view. It uses your authenticated session to read flight and duty information from FL3XX, through the web session and direct API requests, to create logbook entries. While connected, the FTL screen can also fetch planned flights for the next three days. These requests go directly from your device to FL3XX; the developer does not receive your credentials or flight information. The app does not write changes to FL3XX.</p>
         </article>
         <article class="card">
           <h2>Sign-In Sessions</h2>
-          <p>FL3XX and Microsoft sign-in cookies may be stored by WebKit on your device so you do not have to sign in every time. You can use the Logout control in Alfa Omega settings to clear the FL3XX/Microsoft web session from the app.</p>
+          <p>FL3XX and Microsoft sign-in cookies may be stored by WebKit on your device so you do not have to sign in every time. Alfa Omega uses the FL3XX session token and cookies to authenticate direct requests to FL3XX. Your signed-in name, sync date range and import settings are stored locally and are not included in Alfa Omega's iCloud sync files. You can use the Logout control in Alfa Omega settings to clear the FL3XX/Microsoft web session from the app.</p>
         </article>
         <article class="card">
-          <h2>Location, GNSS, and Simulator Data</h2>
-          <p>When you enable location or simulator GNSS features, Alfa Omega may use that position locally to help Quick Stamp suggest or determine nearby departure and arrival airports. Position data is not sent to Alfa Omega servers.</p>
+          <h2>Location and Simulator Records</h2>
+          <p>The current version does not actively request your device's location, track your location in the background or receive simulator GNSS position feeds. Airport searches use the app's airport records. Simulator profiles and simulator log entries are records you enter or import.</p>
         </article>
         <article class="card">
           <h2>Imports and Exports</h2>
